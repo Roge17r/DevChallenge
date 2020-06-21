@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  max-width: 940px;
+  margin: 0 auto;
+}
+header{
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header h1 {
+  padding: 6px 0;
+  color: #D6000D;
+  font-style: italic;
+  align-items: center;
+}
+
+header h1 span {
+  color: black;
+  margin-left: -8px;
+}
+header div {
+  display:  flex;
+  justify-content: flex-end;
+  /* flex: 0 1 700px; */
+}
+header div nav {
+  margin: 8px 16px;
+  padding: 6px 0 ;
+  font-size: 18px;
+  font-weight: bold;
+  /* flex: 1 2 700px; */
+}
+header div .login {
+  background-color: #D6000D;
+  color: white;
+  padding: 6px 32px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+
+
+
+
+/** Infos **/
+div ul li{
+  list-style: none;
+  margin: 16px;
+}
+div ul li span{
+  padding: 4px 8px;
+  background-color: #D6000D;
+  border-radius: 50%;
+  color: white;
+  margin: 0 16px;
+}
+
+.image-container img {
+  width: 400px;
+  height: 400px;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+section .info-container{
+  margin-top: 100px;
+}
+
+h3{
+  margin: 16px auto;
+}
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+}
+.contact input{
+  height: 32px;
+  padding: 8px;
+  border: none;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  margin-right: 8px;
+  border-radius: 8px;
+}
+
+.contact button,.body-container button {
+  height: 32px;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: #D6000D;
+  font-weight: bold;
+
+}
+
+
+
+@media (max-width:700px){
+  header{
+    justify-content: center;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  .body-container button{
+    width: 400px;
+    text-align: center;
+  }
+  div .body-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width:758px){
+  section{
+    justify-content: center;
+    margin-top: 100px;
+  }
+  section .info-container{
+    justify-content: center;
+    margin: 0px auto;
+  }
+  h3{
+    text-align: center;
+  }
+  .contact{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/** Body **/
+.body-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 600px;
+}
+
+.body-container{
+  flex: 1;
+  margin-top: 32px;
+  margin-left: 123px;
+}
+
+.body-container h1{
+  color: #D6000D;
+  font-size: 48px;
+}
+
+.body-container h3{
+  text-align: left;
+}
+
+.body-container button{
+  margin-top: 32px;
+}
+
+
+/** footer **/
+
+.costumers{
+  width: 320px;
+  min-height: 90px;
+  padding: 8px;
+  background-color: #f0f0f0;
+  margin-top: 50px;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  margin-left: 32px;
+
+}
+
+.costumers div span {
+  padding: 30px;
+  background-color:#D6000D;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.costumers .span-container{
+  flex: 1;
+}
+
+.costumers .costumer-depoiment{
+  flex: 2;
+}
+ .costumer-depoiment{
+   font-size: 14px;
+ }
+ .costumer-depoiment small {
+  font-weight: bold;  
+ }
+
+.depoiments{
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  min-height: 300px;
+  margin-top: 64px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+footer div{
+  flex: 1 1 200px;
+}
+
+footer .title{
+  font-style: italic;
+}
+
+footer .title h1 {
+  margin-bottom: 16px;
+}
+ footer .about h2{
+  margin-bottom: 22px;
+
+ }
+
+ footer .contacts h2{
+  margin-bottom: 22px;
+ }
+
+ footer .contacts a{
+  color: white
+}
+
+footer .social-media div img {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+}
+
+footer .social-media h2{
+  margin-bottom: 22px;
+}
+footer .social-media div {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+@media(max-width:700px){
+ footer {
+   flex-direction: column;
+ }
+ footer .social-media h2{
+   margin-top: 22px;
+ }
+}
